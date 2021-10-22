@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TO-DO</title>
+        <link rel="Stylesheet" type="text/css" href="Todo.css"/>
+        <script src="Todo.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div class= "to-do">
+            <div class = "top-bar">
+                <span><ul class = "left-corner">
+                    <li><button id = "navigate">⋮⋮⋮</button></li>
+                    <li><a href="#" id = "title">To Do</a></li>
+                </ul></span>
+                <span class = "center">
+                    <input type = "text" id = "search" placeholder = "🔎">
+                </span>
+                <span> <ul class = "right-corner">
+                    <li><button id = "settings">⚙️</button></li>
+                    <li><button id = "help">?</button></li>
+                    <li><button id = "notification">📢</button></li>
+                    <li><button id = "profile">VS</button></li>
+                </ul></span>
+            </div>
+            <div class = "bottom-bar">
+                <div class = "side-tab">
+                    <div class = "menu">
+                        <ul class = "menu-items">
+                            <li><button id = "back"><</button></li>
+                            <li><button id = "my-day" onclick= "myDay()"><img src= "brightness.png" alt="my-day" class="image"></img>My Day</button></li>
+                            <li><button id = "important" onclick= "imp()"><img src= "star-outline.png" alt="imp" class="image"></img>Important</button></li>
+                            <li><button id = "planned" onclick= "plan()"><img src= "calendar.png" alt="plan" class="image"></img>Planned</button></li>
+                            <li><button id = "assigned" onclick= "assign()"><img src= "user.png" alt="assign" class="image"></img>Assigned to me</button></li>
+                            <li><button id = "tasks" onclick= "myTask()"><img src= "home.png" alt="tasks" class="image"></img>Tasks</button></li>
+                            <li><label>+</label><input type = "text" placeholder = "New list" id = "new-list"></li>
+                    
+                    </div>
+                    <div class = "menu-icon">
+                        <ul class = "symbols">
+                            <li><button id = "message">✉️</button></li>
+                            <li><button id = "calendar">📅</button></li>
+                            <li><button id = "connect">⚙️</button></li>
+                            <li><button id = "pin">📎</button></li>
+                            <li><button id = "click">✔️</button></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class = "main-tab">
+                    <div class = "main">
+                        <div class = "first-main">My Day</div>
+                        <div class = "second-main">+ Add a task due today</div>
+                    </div>
+                    <div class = "lines">
+                        <div class = "line"></div>
+                        <div class = "line"></div>
+                        <div class = "line"></div>
+                        <div class = "line"></div>
+                        <div class = "line"></div>
+                        <div class = "line"></div>
+                        <div class = "line"></div>
+                        <div class = "line"></div>
+                        <div class = "line"></div>
+                        <div class = "line"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
