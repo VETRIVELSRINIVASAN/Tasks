@@ -87,6 +87,18 @@ body {
 #my-day:active, #important:active, #planned:active, #assigned:active, #tasks:active {
   color: #1f78e6;
 }
+#add-Task {
+  padding-bottom: 4px;
+  color: dodgerblue;
+  font-size: 25px;
+  text-align: center;
+  border: none;
+  background-color: #dee3e3;
+}
+#add-Task:hover {
+  background-color: #ffffff;
+  cursor: pointer;
+}
 #new-list {
   padding: 5px;
   width: 180px;
@@ -189,3 +201,15 @@ body {
   border-radius: 50%;
   border: 1px solid #ffffff;
 }
+#added-task {
+  line-height: 1px;
+}
+.new-styling {
+  cursor: pointer;
+  color: dodgerblue;
+  padding: 10px;
+}
+.new-styling:hover {
+  background-color: #ffffff;
+  color: black;
+} 
