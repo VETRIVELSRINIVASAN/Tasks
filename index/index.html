@@ -13,20 +13,20 @@
                     <li><a href="#" id="title">To Do</a></li>
                 </ul></span>
                 <span class = "center">
-                    <input type = "text" id="search" placeholder = "🔎">
+                    <input type="image" src="search.png" class="search"/><input type = "text" id="search">
                 </span>
                 <span> <ul class = "right-corner">
-                    <li><button id="settings">⚙️</button></li>
-                    <li><button id="help">?</button></li>
-                    <li><button id="notification">📢</button></li>
+                    <li><button id="settings"><img src="setting.png" alt="settings" class="images"></img></button></li>
+                    <li><button id="help"><img src="qnm.png" alt="question" class="images"></img></button></li>
+                    <li><button id="notification"><img src="mphone.png" alt="loud" class="images"></img></button></li>
                     <li><button id="profile">VS</button></li>
                 </ul></span>
             </div>
             <div class = "bottom-bar">
-                <div class = "side-tab">
+                <div class = "side-tab" id="side">
                     <div class = "menu">
                         <ul class = "menu-items">
-                            <li><button id="back"><</button></li>
+                            <li><button id="back" onclick="navigate()"><</button></li>
                             <li><button id="my-day" onclick="myDay()"><img src="brightness.png" alt="my-day" class="image"></img>My Day</button></li>
                             <li><button id="important" onclick="imp()"><img src="star-outline.png" alt="imp" class="image"></img>Important</button></li>
                             <li><button id="planned" onclick="plan()"><img src="calendar.png" alt="plan" class="image"></img>Planned</button></li>
@@ -38,18 +38,35 @@
                     </div>   
                     <div class = "menu-icon">
                         <ul class = "symbols">
-                            <li><button id="message">✉️</button></li>
-                            <li><button id="calendar">📅</button></li>
-                            <li><button id="connect">⚙️</button></li>
-                            <li><button id="pin">📎</button></li>
-                            <li><button id="click">✔️</button></li>
+                            <li><button id="message"><img src="envelope.png" alt="set" class="img"></img></button></li>
+                            <li><button id="calendar"><img src="calendar.png" alt="settings" class="img"></img></button></li>
+                            <li><button id="connect"><img src="user.png" alt="settings" class="img"></img></button></li>
+                            <li><button id="pin"><img src="paperclip.png" alt="settings" class="img"></img></button></li>
+                            <li><button id="click"><img src="check-mark.png" alt="settings" class="img"></img></button></li>
                         </ul>
                     </div>
                 </div>
-                <div class = "main-tab">
+                <div class="nav" id="navigator">
+                    <button class="close" onclick="closeNavigate()"> > </button>
+                    <input type="image" src="brightness.png" class="imag" />
+                    <input type="image" src="star-outline.png" class="imag" />
+                    <input type="image" src="calendar.png" class="imag" />
+                    <input type="image" src="user.png" class="imag" />
+                    <input type="image" src="home.png" class="imag" id="house" />
+                    <input type="image" src="envelope.png" class="im" />    
+                    <input type="image" src="calendar.png" class="im" />  
+                    <input type="image" src="user.png" class="im" />   
+                    <input type="image" src="paperclip.png" class="im" />   
+                    <input type="image" src="check-mark.png" class="im" /> 
+                </div>
+                <div class = "main-tab" id="maintb">
                     <div class="main">
                         <div class = "first-main">My Day</div>
-                        <div class = "second-main">+ Add a task due today</div>
+                        <div class = "second-main"><button id= "add" onclick="subTask()"></button><input type="text" id="sub-text" placeholder="Add a task"></div>
+                        <div id="abc"></div>
+                    </div>
+                    <div id = "assign-class">
+                        <input type="image" src="Capture.png" id="capture" />
                     </div>
                     <div class= "lines">
                         <div class="line"></div>

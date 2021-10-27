@@ -20,6 +20,10 @@ body {
   width: 20%;
   display: flex;
   flex-direction: column;
+  top: 0;
+  left: 0;
+  overflow-x:hidden;
+  transition: 0.5s;
 }
 .menu {
   height: 92%;
@@ -29,7 +33,6 @@ body {
   border-top: 1px solid black;
 }
 .menu-items {
-  line-height: 40px;
   list-style: none;
   margin-left: -20px;
 }
@@ -70,9 +73,19 @@ body {
   align: left;
   float: left;
 }
+.images {
+  height: 17px;
+  width: 17px;
+}
+.img {
+  height: 17px;
+  width: 17px;
+}
 #my-day, #important, #planned, #assigned, #tasks {
   width: 255px;
   padding: 7px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-size: 15px;
   padding-left: 25px;
   text-align: left;
@@ -115,6 +128,20 @@ body {
 .second-main{
   padding: 5px;
   color: grey;
+}
+#add {
+  height:15px;
+  border-radius: 50%;
+  border: 1px solid ;
+}
+#add:hover {
+  background-color: dodgerblue;
+}
+#sub-text{
+  border: none;
+}
+#sub-text:focus{
+  outline: none;
 }
 .lines {
   margin-left: 10px;
@@ -169,7 +196,6 @@ body {
   height: 40px;
   border: none;
   width: 40px;
-  font-size: 15px;
 }
 #settings:hover,#notification:hover,#help:hover,#profile:hover,#navigate:hover {
   cursor: pointer;
@@ -181,15 +207,13 @@ body {
   height: 40px;
   border: none;
   width: 40px;
-  font-size: 15px;
 }
 #help {
   background-color: #1f78e6;
   height: 40px;
   border: none;
-  margin-bottom: 1px; 
   width: 40px;
-  font-size: 15px;
+  font-size: 17px;
 }
 #profile {
   background-color: #1f78e6;
@@ -201,15 +225,76 @@ body {
   border-radius: 50%;
   border: 1px solid #ffffff;
 }
-#added-task {
-  line-height: 1px;
-}
 .new-styling {
   cursor: pointer;
   color: dodgerblue;
-  padding: 10px;
+  padding-left: 2px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  list-style-image: url("list.png");
+  margin-left: 25px;
+
 }
-.new-styling:hover {
-  background-color: #ffffff;
-  color: black;
-} 
+#added-task {
+ line-height: 0px;
+}
+.new-style {
+  line-height: 1px;
+}
+.nav {
+  display:none;
+  flex-direction:column;
+  background:  #dee3e3;
+  width:4%;
+  height:100%;
+  justify-content:space-between;
+}
+.imag {
+  height: 17px;
+  width: 17px;
+  padding: 15px;
+  padding-right: 18px;
+}
+#house {
+  border-bottom: 1px solid grey;
+}
+.im {
+  height: 17px;
+  width: 17px;
+  padding: 15px;
+  padding-right: 18px;
+}
+.imag:hover, .im:hover {
+  background-color: white;
+  cursor: pointer;
+}
+.close {
+  border: none;
+  background-color:#dee3e3;
+  padding: 10px;
+  color: #1f78e6;
+  font-size: 20px;
+}
+.close:hover {
+  background-color: white;
+  cursor: pointer;
+}
+.search {
+  height: 17px;
+  width: 17px;
+  position: absolute;
+  margin-top: 6px; 
+  padding-left: 2px;
+}
+#assign-class{
+  display: none;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 460px;
+  display: none;
+}
+#capture {
+  height: 350px;
+  margin-left: 220px;
+  margin-top: 30px;
+}
